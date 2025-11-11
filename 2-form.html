@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Feedback form</title>
+
+    <style>
+      :root {
+        --stroke: #8e8f99;
+        --stroke-strong: #2f2f37;
+        --primary: #4d5ae5;
+        --primary-hover: #5167ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, Roboto, system-ui, -apple-system, Segoe UI, Arial,
+          sans-serif;
+        background: #f3f3f3;
+        color: #2e2f42;
+      }
+      .wrap {
+        max-width: 840px;
+        margin: 40px auto;
+        padding: 24px 28px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 1px 2px #0001, 0 1px 8px #00000018;
+      }
+      .feedback-form {
+        display: grid;
+        row-gap: 24px;
+      }
+      .feedback-form label {
+        display: grid;
+        row-gap: 12px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .feedback-form input,
+      .feedback-form textarea {
+        width: 100%;
+        border: 2px solid var(--stroke);
+        border-radius: 8px;
+        padding: 14px 16px;
+        font-size: 18px;
+        outline: none;
+        transition: border-color 180ms ease;
+      }
+      .feedback-form textarea {
+        min-height: 152px;
+        resize: vertical;
+      }
+      .feedback-form input:hover,
+      .feedback-form textarea:hover,
+      .feedback-form input:focus,
+      .feedback-form textarea:focus {
+        border-color: var(--stroke-strong);
+      }
+      .feedback-form button {
+        height: 56px;
+        min-width: 130px;
+        padding: 0 20px;
+        border: 0;
+        border-radius: 12px;
+        color: #fff;
+        background: var(--primary);
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 0.01em;
+        cursor: pointer;
+        box-shadow: 0 8px 18px #4d5ae533;
+        transition: background-color 160ms ease, transform 120ms ease;
+        width: fit-content;
+      }
+      .feedback-form button:hover {
+        background: var(--primary-hover);
+      }
+      .feedback-form button:active {
+        transform: translateY(1px);
+      }
+    </style>
+    <a href="/index.html">⬅ На головну</a>
+    <script type="module" crossorigin src="/vanilla-app-template/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  </head>
+
+  <body>
+    <main class="wrap">
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+  </body>
+</html>
