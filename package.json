@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-advancedjs-hw-03/",
-    "preview": "vite preview --base=/goit-advancedjs-hw-03/"
+    "build": "vite build --base=/goit-advancedjs-hw-01-/",
+    "preview": "vite preview --base=/goit-advancedjs-hw-01-/"
   },
   "devDependencies": {
     "glob": "^11.0.0",
