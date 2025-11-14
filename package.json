@@ -3,11 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/goit-advancedjs-hw-03/",
+    "preview": "vite preview --base=/goit-advancedjs-hw-03/"
+  },
   "devDependencies": {
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
